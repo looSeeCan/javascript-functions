@@ -1,11 +1,7 @@
 function seed(a, b, c) {
-  return [a, b,c];
+  return Array.prototype.slice.call(arguments);
 }
 
-const a = 1, b = 2, c = 3;
-
-let arr = seed(a, b, c);
-console.log(arr);
 
 function same([x, y], [j, k]) {}
 
@@ -16,7 +12,9 @@ const printCell = (cell, state) => {};
 
 const corners = (state = []) => {};
 
-const printCells = (state) => {};
+const printCells = (state) => {
+
+};
 
 const getNeighborsOf = ([x, y]) => {};
 
